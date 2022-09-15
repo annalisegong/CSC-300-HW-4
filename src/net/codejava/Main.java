@@ -6,11 +6,14 @@ public class Main
 	{
 		String s = "hey";
 		
-		for(int i = 0; i <= s.length()-1; i++)
+		for(int i = 0; i <= s.length(); i++)
 		{
-			if(s(i).equals(s(i+1)))
+			for(int j = 0; j < s.length(); j++)
 			{
-				System.out.println("String: " + s + ", does not have all unique characters");
+				if(s.charAt(i).equals(s.charAt(j)))
+				{
+					System.out.println("String: " + s + ", does not have all unique characters");
+				}
 			}
 		}
 	}
